@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      #tissue {
+text-align: center;
+font-size: 54px;
+background-color: aqua;
+        }
+     #image {
+        text-align: right;
+     }   
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tissue class 9 CBSE Notes</title>
+</head>
+<body>
+   <h1 id="tissue"> Tissue class 9 CBSE Notes chapter-6</h1>
+
+    <nav >
+        <a href="#Meristmatic tissue">Meristematic Tissue</a>   
+        <a href="#Xylem and phloem"> Xylem and phloem</a>   
+        <a href="#Nervous Tissue">Nervous tissue</a>   
+        <a href="#blood">Blood</a>  
+        <a href="#sdf">Important Questions</a>
+
+    </nav>
+     <P>A group of cells having similar shape and function act together to perform a specific function in known as tissue.</P>
+     <img id="image" src="data:image/png;base64,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" alt="pic of plant tissue">
+            <p> There are two types of tissues  in plant: </p>
+<div>
+        <section><b>1.Mieristematic Tissue:</b>  </section>
+            <section><b>2.Permanent Tissue:</b>  </section>
+        </div><p></p>
+
+
+        <h2 id="Meristmatic tissue"><Center><b>Meristematic Tissue</b></Center></h2><hr width="234" color="red">
+        <p >Meristematic tissues are those tissue which   focus on the growth plants and have capacity to divide.These are enlongated,spherical,polygonal in shape and made up of thin cellulose cell wall.Its cells are living </p>.
+<div>
+    <h3>Function of meristematic tissue:</h3>
+        <ul>
+            <li>This tissue take part in growth by formation of new cells.</li>
+                <li>The place of injury in plants is healed up the formation of new cells by meristems.</li>
+            </ul>
+        </div>
+
+  <div>
+        <p>There are three types of meristematic tissue:Aphical Meristerm,Lateral Meristerm and Intercalary Meristerm.</p>
+            <p><b>Aphical Meristerm:</b>These meristerm is found at tip of roots and stems,shoot apex and apices of leaves.The tissue help to grow shoots and roots <br> to grow longer in plants.This type of growth is known as primary growth.</p>
+                <p><b>Lateral Meristerm:</b>These meristerm is found beneath the bark and vascular bundles of dicot leaves and stem.This tissue help to increase the <br> girth of plants.This type of growth is known as secondary growth.</p>
+            <p><b>Intercalary Meristerm:</b>These meristerm found at base of leaves and stems.Such as stem of grasses,other monocots.It heps the leaves and other <br> parts to increase in length. </p>
+   </div>  
+   
+   <h2><center>Permanent Tissue</center></h2><hr width="235" color="red">
+
+<p>Permanent tissue are composed of those cells which have lost their capacity to divide.This tissues have definite shape,size.Its cells may be living or dead. </p>
+
+<p><b>Differentiation:</b>The process by which the cells of meristematic tissue gives rise to permanent tissue is called differentiation.</p>
+<div>
+    <section>There are two types of permanent tissue:
+        <p>1.Simple Permanent tissue</p>
+           <p>2.Complex permanent tissue</p>
+    </section>
+</div>
+<h2><center>Simple permanent tissue</center></h2 ><hr width="243" color="aqua">
+    <p>Simple permanent tissue are those which are made up of only one types of cell.(eg:Parenchyma,Collenchyma etc..)</p>
+<div>
+        <section>Simple Permanent tissue are of three types:
+            <p>1.Parenchyma</p>
+                <p>2.Sclerenchyma</p>
+             <p>3.Collenchyma</p></section>
+        </div>
+
+<h2><center>Parenchyma</center></h2><hr width="234" color="aqua">
+<p><b>Nature:</b> Parenchyma cells are oval,round,and elongated in shape.It contains living cells.It cells have thin cell wall and also contain living protoplasm.Intercellular spaces are abudant.</p>
+<p><b>Occurence:</b>It is found in roots,stems, and cortex of carrot and also in mesophyll of leaves.</p>
+<div>
+    <section><b>Fuctions:</b></section>
+        <p>This tissue supports plants.</p>
+        <p>Also transports the materias occurs through cell of parenchymsa cells.</p>
+        <p>This tissue acts as a storage tissue because it stores food and minerals in roots and stem.</p>
+</div>
+<p><b> There are two types of parenchyma tissue:</b></p>
+<p><b>1.Aerenchyma:</b>In hydrophytes (aquatic plants), large air are present to give buyancy.Such types of parencyma is called aerenchyma.(eg:Lotus,Lily.)</p>
+<p><b>2.Chlorenchyma:</b>If chloroplast is present in the parenchyma . Such parenchyma is called cholorenchyma.It performs photosyntesis.</p>
+
+
+<h2><center>Collenchyma</center></h2><hr width="234" color="aqua">
+<p><b> Nature:</b>Collenchyma cells are living,long and elongated in shape and contais few chloroplast.Intercellular spaces are absent.</p>
+<p><b>Occurence:</b>Collenchyma is maily found in leaf stalk,stem,petiole.Collenchyma is absent in roots and monocot of stems.</p>
+<div>
+    <section>Fuctions:
+        <p>It provides flexibility and strength.</p>
+        <p>When collenchyma contais chloroplast, it makes sugar and starch.</p>
+        <p>Allow easily bending withour breaking.</p>
+</section></div>
+
+
+<h2><center>Sclerenchyma</center></h2><hr width="234" color="aqua">
+
+<p><b>Sclerenchyma:</b>Sclerenchyma is made up of dead cells which are long,narrow in shape.It has thick cell wall.Intercelluar spaces are absent.</p>
+<p><b>Occurence:</b>It is found in stem,root,veins of leaves. <b>The hard husk of coocnut is made up of sclerenchyma.</b></p>
+<div>
+    <section><b> Fuctions of sclerenchyma:</b>
+       <p>It provides toughness and plant cell hard.</p>
+       <p>Cell wall is hard due to presence of lignin.</p>
+    </section>
+</div>
+<table border="3">
+    <caption>Difference between parenchyma,collenchyma,sclerenchymaK</caption>
+    <tr>
+        <td>Parenchyma</td>
+        <td>Collenchyma</td>
+        <td>Sclerenchyma</td>
+    </tr>
+    <tr>
+        <td>It consist of living cells</td>
+        <td>It consist of living cells</td>
+        <td>It consist of dead cells</td>
+    </tr>
+    <tr>
+        <td>Stores food</td>
+        <td>Provides flexibility to plants</td>
+        <td>Provides strength to plants </td>
+    </tr>
+    <tr>
+        <td>Cell wall is primary</td>
+        <td>Cell wall is primary</td>
+        <td>Cell wall is secondary</td>
+    </tr>
+    <tr>
+    <td>Cell wall is thin and made up of cellulose</td>
+    <td>Cell wall is thick and made up of cellulose</td>
+    <td>Cell wall is  very thick and due to composition of lignin</td>
+    </tr>
+    <tr>
+        <td>It contains cytoplasm</td>
+        <td>It contains cytoplasm</td>
+        <td>It don't cytoplasm</td>
+    </tr>
+</table>
+
+<h2><Center><b>Complex permanent tissue</b></Center></h2><hr width="234" color="red">
+
+<P>There are two types of Complex permanent tissue:</P>
+<section>1.Xylem,2.Pholem</section>
+
+<h3  id="Xylem and phloem"><center>Xylem</center></h3><hr width="225" color="aqua">
+<P>Xylem is a conducting tissue.It is also known as wood and it is a mechanical and vascular tissue.Its cell walls are thick.</P>
+<p>Xylem is made up of Tracheids,Vessels,Xylem Parenchyma,Xylem Sclerenchyma(Fibre).In which only xylem parenchyma is living and remaining three are dead.</p>
+
+<p><b>Tracheids:</b>Tracheids are enlongated in shape and made up of dead cells. Its main work to conduct water and minerals. </p>
+<p><b>Vessels:</b>Vessels are advanced and cylindriclal in shape,have thick walls and made up of dead cells.It main work is that to help the continous conduction of water in plants.</p>
+<P><b>Xylem Parenchyma:</b>These living part of xylem and its main work to store the food like starch in xylem.</P>
+<P><b>Xylem Fibre:</b>These are non living and  have thick cell wall. Its main work to provide mechanical support to plant.</P>
+
+<div>
+    <section>Function of Xylem: </section>
+    <p>a)It main work to conduct water and minerals.</p>
+    <P>b)The xylem parenchyma stores food.</P>
+    <p>c)It also provides mechanical support.</p>
+</div>
+
+<h2><center>Pholem</center></h2><hr width="234" color="aqua">
+<p>PHolem is a conducting tissue.It is made up of sieve tubes,companion cells,xylem parechyma,xylem (sclerenchyma)fibre.</p>
+<p><b>Sieve tubes:</b>These are in tube like structure and help is conduction of food to other parts.Nucleus is absent.Sieve tubes posses <b> slime protien</b>which help in growth and repair of sieve tubes.</p>
+<P><b>Companion cells:</b>These cells help to sieve tubes to conduct water.Nucleus is present.Sieve tubes and companion cells originates from single mother cell so, they know as sister cells.</P>
+<P><b>Pholem parenchyma:</b>It main work to store food.</P>
+<P><b>Pholem fibre(sclerenchyma):</b>It provides mechanical support to sieve tubes.</P>
+
+<p><b>Fuction of pholem:-</b></p>
+<ul>
+    <li>It helps in conduction of foods.</li>
+</ul>
+
+<table border="2">
+    <caption>Difference between xylem and Pholem</caption>
+    <tr>
+        <th>Features</th>
+        <th>Xylem</th>
+        <th>Pholem</th>
+    </tr>
+    <tr>
+        <td>Fuction</td>
+        <td>conduct water and minerals</td>
+        <td>conduct organic salt and foods</td>
+    </tr>
+    <tr>
+        <td>Direction of conduction
+            <td>bidirectional</td>
+            <td>unidirectional</td>
+        </td>
+    </tr>
+    <tr>
+        <td>Living elements</td>
+        <td>xylem parenchyma</td>
+        <td>xylem parenchyma,sieve tubes,companion cells</td>
+    </tr>
+    <tr>
+        <td>Dead elements</td>
+        <td>Xylem fibre,Tracheids,vessels</td>
+        <td>pholem fibre</td>
+    </tr>
+    <tr>
+        <td>Mechanical support</td>
+        <td>Provides mechanical support to plants</td>
+        <td>Don't provide andy mechanical support to plants</td>
+    </tr>
+</table>
+<p></p>
+<table border="2">
+    <caption>Difference b/w Meristematic and Permanent tissue</caption>
+    <tr>
+        <th>Meristematic Tissue</th>
+        <th>Permanent Tissue</th>
+    </tr>
+    <tr>
+        <td>Focus on the growth of the plants</td>
+        <td>Don't focus on the groth of plants</td>
+    </tr>
+    <tr>
+        <td>They have capacity to divide.</td>
+        <td>They don't have capacity to divide.</td>
+    </tr>
+    <tr>
+        <td>Cells present are very small <br> and equal in shape.</td>
+    <td>Cells present are very large <br> and unequal in shape.  </td>
+    </tr>
+    <tr>
+        <td>Vacuoles are present</td>
+        <td>Vacuoles are present.</td>
+    </tr>
+    <tr>
+        <td>Intercelluar spaces are absent</td>
+        <td>Intercelluar spaces are present</td>
+    </tr>
+    <tr>
+        <td>Cell wall is thin</td>
+        <td>Cell wall is thick</td>
+    </tr>
+</table>
+<h2><center>Protective Tissue</center></h2> <hr width="234" color="red">
+<p> There are two types of protective tissue:</p>
+<section>1.Epidermis</section>
+<section>2.Cork</section>
+
+<h2><center>Epidermis</center></h2><hr width="234" color="aqua">
+<p>The outermost covering part of plant body is epidermis.It have thick cell.</p>
+<p>It is found in the surface of leaves,roots,stem,flowers etc...</p>
+<p>Fuctions:</p>
+<ul>
+   
+    <li>It protect plants from injury,water loss and pathogens.</li>
+    <li> In desert plants, epidermis generates cuticle to prevent from loss of water.</li>
+   <li>It helps roots in absorbtion of water and nutrients.</li>
+    <li>Cuticle of epidermis also helps in preventing the entry of pathogens.</li>
+</ul>
+
+<h2><center>Cork</center></h2><hr width="234" color="red">
+<p>The outer protective coat of a tree is called cork.It is part of tree bark.</p>
+
+<p>Fuctions of cork:-</p>
+<ul>
+<li>Cell wall is thick due to presence of suberin</li>
+    <li>Protect the tree from fungal and bacterial infection.</li>
+    <li>It also protect from the loss of water.</li>
+    <li>It is light and don't catches fire easily.</li>
+</ul>
+
+<h2><center>Stomata</center></h2><hr width="234" color="aqua">
+<p>The tiny pores present on the surface of the leaves is called stomata.It main work to exchange the gases.</p>
+
+
+<h1><center>Animal Tissues</center></h1> <hr width="234" color="dark black">
+<p align="right"> <img src="data:image/png;base64,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" alt=""></p>
+<p>There are four types of animal tissues</p>
+<ol type="1">
+    <li>Epithelial Tissue</li>
+    <li>Muscular Tissue</li>
+    <li>Connective Tissue</li>
+    <li>Nervous Tissue</li>
+</ol>
+<h2><center>Epithelial Tissues</center></h2><hr width="234" color="aqua">
+<p><b>Nature:</b> Epidermis is the outermost covering and protective tissue of plant.It xonsist of single cell and grow on some other types of tissues.</p>
+<p><b>Occurence:</b>It is found in inner lining of mouth,alveoli,kidney tubules etc... </p>
+<p>Fuctions of Epidermal tissues</p>
+<ul>
+    <li>It protect the other organs by covering them.</li>
+    <li>Helps in absorbtion of water and exertion of waste.</li>
+    <li>Protect our cell from drying.</li>
+</ul>
+
+<p>Types of Epithelial tissues:</p>
+<p><b>1.Squamous epithelium:</b>Its is flat,thin and irregular in shape to form linings.It is found in inner lining of mouth,oesophagus,alveoli(lungs) etc.It prevent our body from drying and mechinal injury.</p>
+
+<p><b>2.Stratified squamous epithelium:</b>When squamous epithelium is arranged in patter of layer,this epithelium is called stratified squamous epithelium.It is present in outer layer of skin and it also prevent from injury.</p>
+
+<p><b>3.Cuboidal Epithelium:</b>It is in cube like structure.It is present in kidney tubules,salivary gland,sweat gland,thyroid vessels.Its main function is to help in absorbtion and provide mechanical support.</p>
+
+
+<p><b>4.Columnar Epithelium:</b>This tissue is present in small instestine,alimentary canal,gall bladder and oviduct.It also helps in absorbtion and facilitates movement across epitheliar barrier. </p>
+
+<p><b>5.Ciliated Epithelial:</b>The hair like structure organ is called cilia.It is present in sperm duct,trachea,bronchi(lungs),nasal(cavaity).</p>
+
+<h2><center>Muscular Tissue</center></h2><hr width="234" color="red">
+<p><b>Voluntary muscles:</b>Those muscles starts or stops according to our order.Those muscles are called voluntary muscles(eg:-striated muscle).</p>
+<p><b>Inoluntary muscles:</b>Those muscles don't starts or stops according to our order.Those muscles are called involuntary muscles(eg:-unstriated muscle).</p>
+
+
+<p>Muscular tissu are elongated in shape.It has long fibre like cells calle muscles fibre. <b>Muscles tissues are resposible for movement of our body and body organs like heart,alimentary canal.Muscles contains protein called contractile protein which helps in contract and relax to cause movement.</b></p>
+
+<p>Types of muscles tissues:-</p>
+<p><b>1.Striated Tissue:  Nature:</b>Also known as voluntary and skeletan tissue(it is attach to skeleton).It is long,clyndrical and unbranched in shape.It is multinucleate and ctyoplasm is called sacroplasm.</p>
+                        <p><b>Occurence:</b>This tissue is found in neck,limb,tongue,diaphagram,pharynx etc...</p>
+<p><b>Fuctions:-</b></p>
+<ul>
+    <li>These muscles get tired and need rest.</li>
+    <li>These muscles provides the force for locomotion.</li>
+</ul>
+
+<p><b>2.Smooth muscles: Nature:</b>Also known as unstriated and involuntary.Spindle in shape and cytoplasm is called sacroplasm and it is uninucleate.</p>
+<p><b>Occurence:</b>These muscles are found in small instestine,iris of eye,urinary bladder.</p>
+<p><b>Fuctions:-</b></p>
+<ul>
+    <li>These muscles also get tired and need rest.</li>
+    <li>They don't work according to our will.</li>
+    <li>The movement of food in alimentary canal is brought by smooth muscles.</li>
+</ul>
+
+<p><b>Cardiac Muscles:Nature:</b>These muscles are branched and uninucleate and also involuntary.Its cytoplasm is called sacroplasm.</p>
+<p><b>Occurence:</b>Only found in the walls of heart.</p>
+<p><b>Fuctions :-</b></p>
+<ul>
+    <li>The rhythmic contraction and relaxation of the heart muscles help to pump blood .</li>
+    <li>These cell are tireless and work throughout life.</li>
+</ul>
+
+<table border="3">
+    <caption>Difference between Cardiac,Smooth and Striated muscles</caption>
+    <tr>
+        <th>Features</th>
+        <th>Striated muscles</th>
+        <th>Smooth muscles</th>
+        <th>Cardiac Muscles</th>
+    </tr>
+    <tr>
+        <td>Control</td>
+        <td>Can be control</td>
+        <td>Can't be control</td>
+        <td>Can't be control</td>
+    </tr>
+    <tr>
+        <td>Location</td>
+        <td>Attached to skeleton </td>
+        <td>Found in iris of eye etc..</td>
+        <td>Only in the walls of hearts</td>
+    </tr>
+    <tr>
+        <td>Structure</td>
+        <td>Unbranched</td>
+        <td>Spindle-shaped</td>
+        <td>Branched</td>
+    </tr>
+    <tr>
+        <td>Cytoplasm</td>
+        <td>Called sacroplasm</td>
+        <td>Called sacroplasm</td>
+        <td>Called sacroplasm</td>
+    </tr>
+    <tr>
+        <td>Fatigue</td>
+        <td>Need rest and get tired</td>
+        <td>Need rest and get tired</td>
+        <td>Don't need rest and dont't get tired</td>
+    </tr>
+    <tr>
+        <td>Nucleus</td>
+        <td>Multinucleate</td>
+        <td>Uninucleate</td>
+        <td>Uninucleate</td>
+    </tr>
+    <tr>
+        <td>Function</td>
+        <td>Responsible for voluntary movement.</td>
+        <td>Responsible for involuntary movement.</td>
+        <td>Responsible for rhythmic contraction and relaxation</td>
+    </tr>
+</table>
+
+<h2><center>Connective Tissue</center></h2><hr width="234" color="red">
+<p>Connective tissues connect muscle to bone,bones to bone etc. The main fuction of conective tissue is to protect against infections,store fat,fill hollow spaces and it also provides structural framework.</p>
+
+<h3><center>Areolar and Adipose Connective Tissue</center></h3><hr width="234" color="aqua">
+
+<p><b>Areolar Tissue:Nature:</b>These tissue is loose and its matrix is made up of two type.Yellow elastin and White collagen fibre.It is round and oval in shape.</p>
+
+<p><b>Occurence:</b>These are mainly found beneath the skin,muscles,blood vessels,bone marrow .</p>
+<p><b>Functions:-</b></p>
+<ul>
+    <li>It helps in filling the hollow spaces.</li>
+    <li>It support internal organs.</li>
+    <li>It helps in reparing tissue.</li>
+    <li></li>
+</ul>
+
+<p><b>Adipose Tissue:Nature:</b>These tissue is made up of fat gobules or adipocytes.It is round and oval in shape and contains large drop of fats..</p>
+<p><b>Occurence:</b>It is widely found in internal organs like kiney and bone marrow.</p>
+
+<p><b>Fuctions:-</b></p>
+<ul>
+    <li>It help in regulating temperature.</li>
+    <li>It store fats.</li>
+    <li>It also provide a shape to limbs.</li> 
+</ul>
+<h2><center>Tendon and Ligament</center></h2><hr width="234" color="aqua">
+<p><b>Tendon:</b>Tendon are those which connect from bones to muscles.It is elastic and help in movement of bones.</p>
+<p><b>Ligament:</b>Ligament are those which connect from bones to bones.It is non elastic and hard and hold bones together hardly.</p>
+
+<table border="2">
+    <caption>Difference between tendon and ligament</caption>
+    <tr>
+        <th>Tendon</th>
+        <th>Ligament</th>
+    </tr>
+    <tr>
+        <td>Connects muscles to bones</td>
+        <td>Connects bones to bones</td>
+    </tr>
+    <tr>
+        <td>These are non elastic and tough</td>
+        <td>These are elastic and hard</td>
+    </tr>
+    <tr>
+        <td>Help in movement of bones</td>
+        <td>Help in holding bones together</td>
+    </tr>
+    <tr>
+        <td>Each muscle contains one tendon </td>
+        <td>Each joint contain many ligament</td>
+    </tr>
+    <tr>
+        <td>White in colour due to less blood supply.</td>
+        <td>Yellow in colour due to presence of elastin fibre</td>
+    </tr>
+</table>
+
+
+<h2><center>Skeleton Tissue</center></h2><hr width="234" color="red">
+
+<P>The skeleton tissue is a supporting tissue which includes bone and cartilage.</P>
+
+<h2><center>Bone and 
+    cartilage
+</center></h2><hr width="234" color="aqua">
+
+<p><b>Bone:Nature:</b>It is hard,inflexibe and porous in nature.Its matrix is made up of calcilum phosphate.Bones cells also called oestoblasts</p>
+<p><b>Fuctions:-</b></p>
+<ul>
+    <li>It provides structural framework.</li>
+    <li>It provides shape to body.</li>
+    <li>It also protects our organs.</li>
+</ul>
+
+<P><b>Cartilage: Nature:</b>It is flexible,and its matrix is made up of sugar and protein.</P>
+<p><b>Occurence:</b>IT is found in ear pinna,nose tip,trachea,larynx etc..</p>
+<P><b>Function:</b></P>
+<ul>
+    <li>Cartilage is capable for continous growth .</li>
+    <li>Provides support and flexibility to plants.</li>
+   <li> It can be folded</li>
+</ul>
+
+<table border="2">
+    <caption>Difference between bone and cartilage</caption>
+
+    <tr>
+        <th>Bone</th>
+        <th>Cartilage</th>
+    </tr>
+    <tr>
+        <td>It is hard and inflexibe.</td>
+        <td>It is soft,elastic and flexible</td>
+    </tr>
+    <tr>
+        <td>It matrix occurs in homoogeneous mass</td>
+        <td>It matrix occurs in lamellae</td>
+    </tr>
+    <tr>
+        <td>Growth is unidirectional</td>
+        <td>Growth is bidirectional</td>
+    </tr>
+    <tr>
+            <td>It has rich blood supply</td>
+            <td>It has less blood supply</td>
+    </tr>
+</table>
+
+
+<h2><center>Fluid Connective Tissue</center></h2><hr width="334" color="red">
+
+<p>There are two types of fluid Connective tissue:</p>
+<ol>
+    <li>Blood</li>
+    <li>Lymph</li>
+</ol>
+<h2 id="blood"><center>Blood</center></h2><hr width="234" color="blue">
+<P><b>Nature:It is a fluid connective tissue.It matrix is made up of plasma.</b></P>
+<p><b>Occurence:</b>It is found in arteries,vein and capillaries.</p>
+<p><b>Fuctions of blood:-</b></p>
+<ul>
+    <li>The blood helps to protect against infection.</li>
+    <li>Blood transport nutrients,hormones,oxygen from one place to another.</li>
+    <li>Blood platelets help in clotting of blood.</li>
+</ul>
+<p><b>There are four types of our blood:</b></p>
+<p><b>1.Plasma:</b>Plasma is the colourless and fluid part of blood.It contains 55% of total blood volume and 90% of water and 7% of protein.It contains oxygen,hormones,RBC,WBC,Platelets .Plasma carry these from one part to another part of body.</p>
+<p><b>2.RBC:</b>Red blood corpuscles are also called erythrocytes.It is red in colour due to present of red pigment called haemoglobin.It transfer oxygen from lungs to body parts.</p>
+<p><b>3.WBC:</b>White blood cells are colourless and also known as leucocytes.WBC are present in less amount as compare to RBC.It is known as soldierr our body because it protect our body form various diseases and infections.</p>
+<p><b>4.Platelets:</b>These are also called thrombocytes and help in clotting of blood.</p>
+<table border="2">
+    <caption>Difference between WBC and RBC</caption>
+    <tr>
+        <th>RBC</th>
+        <TH>WBC</TH>
+    </tr>
+    <tr>
+        <td>Red in colour</td>
+        <td>These are colourless</td>
+    </tr>
+    <tr>
+        <td>Nucleus is absent so, it is called corpuscles</td>
+        <td>Nucleus is present </td>
+    </tr>
+    <tr>
+        <td>These contains haemoglobin</td>
+        <td>These don't contains haemoglobin</td>
+    </tr>
+    <tr>
+        <td>Life span is of 120 days</td>
+        <td>Life span is of few days upto few hours to four days</td>
+    </tr>
+    <tr>
+        <td>It is of only one type</td>
+        <td>It have 5 types</td>
+    </tr>
+    <tr>
+        <td>It transports oxygen in our body</td>
+        <td>It creates an defece & immune system</td>
+    </tr>
+</table>
+<h2><center>Lymph</center></h2><hr width="234" color="blue">
+<p><b>Nature:</b>It is colourless andfilter out of blood capillaries.Lymph is present in WBC  and absent in RBC.</p>
+<P><B>Fuctions :</B></P>
+<ul>
+    <li>It brings Co<sub>2</sub> and nitrogenous waste from tissue.</li>
+    <li>Lymph transports the nutrients filtered by capillaries back o heart.</li>
+</ul>
+
+
+
+<h3 id="Nervous Tissue"><center>Nervous Tissue</center></h3><hr color="red" width="234">
+<p align="right"><img src="data:image/jpeg;base64,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EREBERAREQEREBERA116KupVwCp8DKHiODxVFSMM5ZNOybF1sb2VjuPI6zooks2sukbM/KJJiZ7f1NkRE2hERAREp1xles1YUTTUUn6sB1ZizhFa5IYZR2x4GBcRKDiXSNVFZaV+spq5BZcyFqYuykBg3MXNgbaEybw7GVKjV1bL2HCqQDsaauMwzam7eUCZiqjKt1Us3gAbb8ydhPFDDkEuxu5FvIDkvIfnKrCdIQKStXVlYpmBCjK5DBSEAZiNWXRrb+s2VePA5kSnU+kANelZCyZVVszfWBStnTZ9c3kbSzfuq5IvInDxYMvgrlR4aaMB8M1vhIPDeOdYtMPTbrGp0WNsgU9apJZLvfKCrXvqNN5cxpACZiJQiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAkOtwykzZyDmPeszqHtp9YqkCppp2gdJMiBX1uDUWzgqwDghlWpUVTfc5FYLc21NrmbMFw2nRLFA13ILFnqPcqLA9tjrbT4DlJkQK5eCUBcZLggrZmdgFJBIQMSEuQD2bbCDwShYdk3BJzdZUzm4AIapmzMCAosSR2V5CWMQK7C8KSm6MALU0KUh2rqjZbgszHN3RbawlhMxAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/9k=" alt="nervous tissue"></p>
+<P><b>Nerve impulses:</b>The impulses that passes along the nerve fibre called nerve impulses.</P>
+<p><b>Signals(Impulses):</b>Impulses is the passage of  electrical activity along the axon of nerve cell.</p>
+<p><b>Nature:</b>Nervous tissue contains highly speciliased cell called nerve cells or neuron.The functional,structural unit of our nerveous tissu is neurons or nerve.Nerve tissue is made up of neurons.</p>
+
+<p><b>Occurence:</b>It is found in spinal cord,brain etc...</p><p></p>
+<p><b>Functions:-</b></p>
+<ul>
+    <li>It have ability to receive stimuli and conduct signals to different parts.</li>
+    <li>It transmits the message  in our body.</li>
+    <li>The dendrites receive message and axon takes the impulses away from cell body and trasfer to brain. </li>
+</ul> 
+
+<div>
+    <section>Parts of Nervous Tissue:
+        <p><b>1.Cyton:</b>Cyton is called cell body covered by plasma membrance and contains nucleus and cytoplasm connects to dendrites.</p>
+<P><b>2.Dendon & Dendrites:</b>It is branched like structure that collect information from  and converts in the form of signal and passes to cell body.</P>
+<P><b>3.Axon:</b>Axon is tube like structure that carries information from cell body to nerve ending.</P>
+<P><b>4 Nerve Ending</b>The  ending place of axon is called nerve ending.</P>
+    </section>
+</div>
+<table border="2">
+    <caption>Difference b/w plant and animal tissue<caption>
+        <tr>
+            <th>Features</th>
+            <th>Animal Tissue</th>
+            <th>Plant Tissue</th>
+        </tr>
+        <tr>
+            <td>Movement</td>
+            <td>These can move, so muscular tissue is present </td>
+            <td>These can't move, so muscular tissue is abesent </td>
+        </tr>
+        <tr>
+            <td>About cells</td>
+            <td>Most cells are living</td>
+            <td>Most cells are dead</td>
+        </tr>
+        <tr>
+            <td>Growth</td>
+            <td>Growth is in all regions</td>
+            <td>Growth is in limited regions</td>
+        </tr>
+        <tr>
+            <td>Examples</td>
+            <td>Xylem,Pholem,Cork</td>
+            <td>Bone,Blood,Cartilage</td>
+        </tr>
+</table>
+<h2 id="sdf"><b>Frequently asked questions:-</b></h2>
+<header> A.Fill in the blanks</header>
+<p>1.The lining of our blood vessels is made up of <b>Squamous Epithelium</b></p>
+<p>2.The lining of our small intestine is made up of <b>Columnar epithelium</b> </p>
+<p>3.The lining of our kidney tubules is made up of <b>Cuboidal epithelium</b> </p>
+<p>4. The epithelial cells with cilia found <b>Respriratory tract</b></p>
+<header>B.Give reason for this:-</header>
+<p>1.Meistematic cell have a nuclues and dense cytoplasm but they lack of vaculoes </p>
+<p>Ans:-.Meistematic cell have a nuclues and dense cytoplasm but they lack of vaculoes because the cell of meristematic tissue have to divide and vacuoles occupies a large space and affect them in the division so, vacuoles are absent.</p>
+
+<P>2.Intercelluar spaces are abudant in sclerenchyma tissue.</P>
+<p>Ans:-.Intercelluar spaces are abudant in sclerenchyma tissue because they have a tough substance (known as lignin) around their cell membrance which makes them hard and tough and occupies the space.</p>
+
+<header>C.Define how the meristematic help in filling the wound of trees?</header>
+<p>Ans: The cells of meristematic tissue can divide so, they divide continously and fill the wound of tree.<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
